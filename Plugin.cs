@@ -9,6 +9,11 @@ namespace TestingPlugin
 {
     public class TestingPlugin : Plugin<Config>
     {
+    	public override string Author { get; } = "Killla";
+		public override string Name { get; } = "Template Plugin";
+		public override string Prefix { get; } = "TP";
+		public override Version RequiredExiledVersion { get; } = new Version(3, 0, 0);
+        
         public override void OnEnabled()
         {
             EventHandlers.PlayerEventHandlers.OnEnabled();
