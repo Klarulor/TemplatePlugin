@@ -33,10 +33,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Assembly-CSharp-firstpass">
-      <HintPath>..\..\..\Downloads\Dev\Assembly-CSharp-firstpass.dll</HintPath>
+      <HintPath>..\..\..\..\Downloads\Dev\Assembly-CSharp-firstpass.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp-Publicized">
-      <HintPath>..\..\..\Downloads\Dev\Assembly-CSharp-Publicized.dll</HintPath>
+      <HintPath>..\..\..\..\Downloads\Dev\Assembly-CSharp-Publicized.dll</HintPath>
     </Reference>
     <Reference Include="CommandSystem.Core">
       <HintPath>..\..\..\Downloads\Dev\CommandSystem.Core.dll</HintPath>
@@ -83,8 +83,8 @@
   <ItemGroup>
     <Compile Include="Commands\Test.cs" />
     <Compile Include="Config.cs" />
-    <Compile Include="EventHandlers\PlayerEventHandlers.cs" />
-    <Compile Include="EventHandlers\ServerEventHandlers.cs" />
+    <Compile Include="EventHandlers\PlayerHandlers.cs" />
+    <Compile Include="EventHandlers\ServerHandlers.cs" />
     <Compile Include="Plugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
