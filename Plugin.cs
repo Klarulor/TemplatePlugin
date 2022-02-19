@@ -11,13 +11,13 @@ namespace TestingPlugin
     public class Plugin : Plugin<Config>
     {
     	public override string Author { get; } = "Killla";
-	public override string Name { get; } = "Template Plugin";
-	public override string Prefix { get; } = "TP";
-	public override Version Version { get; } = new Version(1, 0, 0);
-	public override Version RequiredExiledVersion { get; } = new Version(3, 0, 0);
+	    public override string Name { get; } = "Template Plugin";
+	    public override string Prefix { get; } = "TP";
+	    public override Version Version { get; } = new Version(1, 0, 0);
+	    public override Version RequiredExiledVersion { get; } = new Version(3, 0, 0);
 
-        public PlayerHandlers PlayerHandlers;
-        public ServerHandlers ServerHandlers;
+        public PlayerHandlers PlayerHandlers {get; private set;}
+        public ServerHandlers ServerHandlers {get; private set;}
         public override void OnEnabled()
         {
             PlayerHandlers = new PlayerHandlers(this);
